@@ -1,0 +1,236 @@
+{ "intents":[
+  {"tag":"greetings",
+     "patterns": [
+        "Hi",
+        "Hello",
+        "Hey", 
+        "good day", 
+        "greetings",
+        "What's up?",
+        "How are your today?",
+        "How are you?",
+        "how is it going?"
+    ],
+     "responses": [
+        "Hello!",
+        "Hey!",
+        "How are you today?",
+        "What can I do for you?",
+        "What can I offer to you today?"
+    ]
+},
+{  "tag": "age",
+   "patterns": [
+    "age?",
+    "hwo old are  you?",
+    "what is your age?",
+    "how old is Paul",
+    "Are you older than me?"
+    ],
+   "responses":[
+   "Maybe 10 months old.",
+   "It is a secret.",
+   "Sorry, I dont' want to tell you.",
+   "Sorry, I forgot."
+  ]
+},
+{
+    "tag": "sampleQuestions",
+    "patterns": [
+        "sample questions",
+        "what kinds of questions I can ask?", 
+        "what kinds of questions you can answer?", 
+        "A list of queestions?"
+    ],
+    "responses": [
+    "Below are typical queries:\n quit \n show me the menu \n Hello \n what is your name?\n what is the definition of pv?\n What is the meaning of fv?\n show me the menu\n explain pv(one fv)\n explain fv()\n explain pv(perpetuity)\n What is the logic behind fv(annuity)\n\n"]
+},
+{  "tag": "name",
+    "patterns": [
+        "what is your name?",
+        "what should I call  you",
+        "name?",
+        "do you have a name",
+        "who are you",
+        "could you please tell me your name"
+    ],
+    "responses": [
+        "Chatbot tutor",
+        "Paul",
+        "I am an AI tutor",
+        "Chatbot for Time Value of Money",
+        "AI Tutor for Time Value of Money",
+        "Tutor for TVM"
+    ]
+},
+{
+    "tag": "menu",
+    "patterns": [
+        "menu?",
+        "can you should me a menu?",
+        "How many equations you can explain?",
+        "Equations?"
+    ],
+    "responses": ["Chatbot can explain the following formulae:\n1) pv(one fv)\n2) fv(pv)\n3) pv(perpetuity)\n4) pv(annuity)\n5) fv(annuity)\n    e.g., explain pv(one fv)\n"]
+},
+{
+    "tag": "definition_of_R", 
+     "patterns": [
+        "what is definition of R?",
+        "definition of R",
+        "how to define R?",
+        "R?",
+        "R's definition?",
+        "What is R in the formula"
+    ],
+    "responses": [
+        "R is the period rate",
+        "R is return", 
+        "R is a discount rate",
+        "R is an effective period rate"
+    ]
+},
+{
+    "tag": "definition_PV",
+    "patterns": [
+        "what is definition of pv?",
+        "definition of pv",
+        "how to define pv?",
+        "pv?",
+        "pv's definition?",
+        "Whta is pv in the formula"
+    ],
+    "responses": [
+        "present value",
+        "pv can be viewed as today's value",
+        "pv is called present value",
+        "pv is present value"
+    ]
+},
+{
+    "tag": "definition_FV",
+    "patterns": [
+        "what is definition of fv?",
+        "definition of fv",
+        "how to define fv?",
+        "fv?",
+        "fv's definition?",
+        "Whta is fv in the formula"
+    ],
+    "responses": [
+         "fv is defined as a future value",
+          "fv can be viewed a value after today",
+          "fv is called future value","future value"
+        ]
+},
+{
+    "tag": "definition_N",
+    "patterns": [
+        "what is definition of n?",
+        "definition of n",
+        "how to define n?",
+        "n?",
+        "n's definition?",
+        "Whta is n in the formula" 
+     ],
+    "responses": [
+         "n is the number of periods",
+          "nubmer of periods"
+        ]
+},
+
+  {"tag": "five equations",
+    "patterns": [
+    "which five equations?",
+    "which equations can you help me?",
+    "How many equations you can explain"
+],
+    "responses": ["I can help you understand pv(), fv(), pv(perpetuity), pv(annuity), and fv(annuity)",
+                  "Finve quations are pv(), fv(), pv(perpetuity), pv(annuity), and fv(annuity)",
+                  "pv(), fv(), pv(perpetuity), pv(annuity), and fv(annuity)",
+                  "pv(one fv), fv(), pv(perpetuity), pv(annuity), and fv(annuity)"
+]
+},
+
+{
+    "tag": "five Excel formulae",
+    "patterns": [
+        "which five Excel functions?",
+        "Five Excel functions, please",
+        "What are associated Excel functions",
+        "What are associated five Excel functions",
+        "What are related Excel functions?"
+    ],
+    "responses": [
+        "Those five Excel functions are pv(), fv(), pmt(), rate(), and nper().",
+        "pv(), fv(), pmt(), rate(), and nper().",
+        "The related Excel functions: pv(), fv(), pmt(), rate(), and nper().",
+        "The corresponding Excel functions are pv(), fv(), pmt(), rate(), and nper()."
+    ]
+},
+
+{
+    "tag": "explain_pv_one_fv",
+    "patterns": [
+        "how about pv(one fv)",
+        "can you explan pv(fv)?",
+        "explain equation (1)",
+        "can  you explain equation 1",
+        "how to run pv() function?",
+        "Which eqauation I can use to calculate the present value of one future value?"
+    ],
+    "responses": ["The logic is given below:\n1) assume that pv=100, R=0.1, and n=1\n2) after one period: 100+10\n3) 100+10=100 + 100*0.1\n4) 100*(1+0.1)\n5) apply the formula 110*(1+0.1)\n6) 110*(1+0.1)= 110*(1+0.1)*(1+0.1)= 100*(1+0.1)^2\n"]
+},
+
+
+{
+    "tag": "explain_pv_perpetuity",
+    "patterns": [
+        "explain pv(perpetuity)",
+        "how about pv of perpetuity",
+        "can you explan pv(peretuity)?",
+        "explain equation ()"
+    ],
+    "responses": ["pv(perpetuity) can be viewd as:\nStep 1: pv(1st cash floww) + pv(2nd cash flow) + pv(3rd cash flow) + ...\n Step2: apply the formula of S=a/(1+q) where q=1/(1+R)\nStep 3:pv(perpetuity)=1/(1+R)/(1-1/(1+R)\n Step4: pv=1/(1+R-1)=C/R\n"]
+},
+{
+    "tag": "explain pv annuity",
+    "patterns": [
+        "explain pv(annuity)",
+        "how about pv of annuity?",
+        "can you explan pv(annuity)?",
+        "what is the logic behind pv(annuity)",
+        "explain equation (4)"
+    ],
+    "responses": [
+       "pv(annuity) can be viewed as the combination of 2 pv(perpetuity):\n Step 1: assume that we will receive $500 for the next 10 years\n Step 2: it is equvalent to receiving $500 forever, plus paying $500 forever starting year 11 \n Step 3:pv(1st perpetuity) + pv(2nd perpetuity) \n Step 4: C/R (at 0) - C/R (at n)\n Step 5: C/R - C/R *(1- 1/(1+R)^n= C/R*(1-1/(1+R)^n)\n"
+    ]
+},
+
+
+
+{
+    "tag": "explain Excel pv() function",
+    "patterns": [
+        "explain excel pv().",
+        "could you please excel pv() function.",
+        "can you please excel pv() function.",
+        "what are input s for excel pv() function.",
+        "how to use the Excel pv() function?"
+    ],
+    "responses": [
+     "Explanation for the Excel pv() function:\n       Inputs    : =pv(rate,nper,pmt,[fv],[type].\n       Note    #1: [fv] and [type] are optional inputs\n       Note    #2: Excel sign conversion: positive fv -> negative pv; positive fv -> negative pv.\n       Example #1: =pv(0.1,1,0,100)= -90.01\n       Example #2: =pv(0.1, 1, 0,-100)= 90.01 \n"
+     ]
+},
+
+
+{
+    "tag": "fv_equation",
+    "patterns": [
+        "can you show me the futurer value function?",
+         "future value of one pv?",
+          "fv function?"
+     ],
+    "responses": ["fv=pv(1+R)^n","future value = present value *(1+rate)^n"]
+}
+  ]}

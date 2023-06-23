@@ -1,0 +1,9 @@
+json
+nltk
+math
+pickle
+random
+numpy
+streamlit
+numpy_financial
+tensorflow
